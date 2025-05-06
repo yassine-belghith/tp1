@@ -1,0 +1,13 @@
+package com.anis.produits.repo;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.anis.produits.entities.Produit;
+
+public interface ProduitRepository extends JpaRepository<Produit , Long>{
+	List<Produit> findByNomProduit(String nom);
+	List<Produit> findByNomProduitContains(String nom);
+
+}

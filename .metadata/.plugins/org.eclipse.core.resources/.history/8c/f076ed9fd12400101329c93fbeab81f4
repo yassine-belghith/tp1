@@ -1,0 +1,5 @@
+package com.tp.produits.entities;
+
+public class Categorie {
+
+}
